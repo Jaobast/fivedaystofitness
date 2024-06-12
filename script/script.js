@@ -1,3 +1,6 @@
+
+
+
 function openWorkout(id) {
     const overlay = document.getElementById("workout");
     overlay.style.display = "flex";
@@ -24,8 +27,11 @@ function openWorkout(id) {
         p.innerHTML = workout.text;
 
         const img = document.querySelector(".img");
-        img.src = `./img/${workout.id}`;
+        img.src = workout.pic;
+        img.classList.remove("bein", "brust", "ruecken", "ruder", "bauch")
+        img.classList.add(workout.id)
     }
+
 }
 
 function closeWorkout() {
@@ -34,4 +40,5 @@ function closeWorkout() {
 
     const underlay = document.getElementById("container");
     underlay.style.display = "block";
+    
 }

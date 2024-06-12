@@ -11,14 +11,14 @@
     display: flex; flex-direction: column;
     width: 100vw;
     justify-content: center; align-items: center;
-    margin-top: 25vh;
+    margin-top: 15vh;
     color: var(--blue);
     z-index: 5;
 }
 
 .h1, .h4{ font-family: 'Rubrik-Mono-One';}
 
-.h4{ margin-top: -7px; margin-bottom: 3vh;}
+.h4{ margin-top: -7px; margin-bottom: 3vh; text-align: center;}
 
 .p{
     padding: 0 3vh;
@@ -43,3 +43,25 @@
     top:15vh; left: 5vw;
     z-index: 5;
 }
+
+.circle{
+    position: fixed;
+    bottom: -12vh; right: -12vw;
+    width: 80vw;
+}
+
+.img{
+    position: fixed;
+    bottom: 0; right: 5vw;
+    width: 70vw;
+}
+
+.circle .bein{ bottom: -3vh; right: 0; width: 75vw;}
+
+.circle .brust{ bottom: 1vh; right: 3vw;}
+
+.circle .ruecken{ bottom: -2vh; right: 3vw;}
+
+.circle .ruder{ bottom: -3vh; right: -3vw; width: 75vw;}
+
+.circle .bauch{ bottom: -2vh; right: 3vw;}
