@@ -1,0 +1,45 @@
+#workout{
+    display: none;
+    flex-direction: column;
+    z-index: 5;
+    height: 100vh; width: 100vw;
+    background-color: var(--lila);
+    color: white;
+}
+
+.workout-container{
+    display: flex; flex-direction: column;
+    width: 100vw;
+    justify-content: center; align-items: center;
+    margin-top: 25vh;
+    color: var(--blue);
+    z-index: 5;
+}
+
+.h1, .h4{ font-family: 'Rubrik-Mono-One';}
+
+.h4{ margin-top: -7px; margin-bottom: 3vh;}
+
+.p{
+    padding: 0 3vh;
+    font-family: 'Krona-One';
+    font-size: 12px;
+    text-align: justify;
+}
+
+.wallpaper-lila{
+    width: 200vw;
+    position: absolute;
+    top:0;
+}
+
+.wallpaper-lila img{
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+}
+
+.back{
+    position: absolute;
+    width: 10vw;
+    top:15vh; left: 5vw;
+    z-index: 5;
+}
