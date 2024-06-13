@@ -2,11 +2,14 @@
 
 
 function openWorkout(id) {
-    const overlay = document.getElementById("workout");
-    overlay.style.display = "flex";
+    setTimeout(function(){
+        const overlay = document.getElementById("workout");
+        overlay.style.display = "flex";
 
-    const underlay = document.getElementById("container");
-    underlay.style.display = "none";
+        const underlay = document.getElementById("container");
+        underlay.style.display = "none";
+    ;}, 600);
+
 
     let workout = null;
 
@@ -15,6 +18,13 @@ function openWorkout(id) {
             workout = workoutArray[i];
         }
     }
+
+    const container = document.querySelector(` #${workout.id}.uebung`);
+    container.classList.add("expandieren");
+
+    setTimeout(function(){
+        container.classList.remove("expandieren")
+    ;}, 1000);
 
     if (workout) {
         const h1 = document.querySelector(".h1");
