@@ -80,7 +80,7 @@
 }
 
 @keyframes maschineAnimation {
-    10% { transform: translate(-4%, -8%); opacity: 0%;}
-    50%{ opacity: 100%;}
+    0% { transform: translate(-4%, -8%); opacity: 0%;}
+    40%{ opacity: 100%;}
     100% { transform: translatex(0%);opacity: 100%;}
 }
